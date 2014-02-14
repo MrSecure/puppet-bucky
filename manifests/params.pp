@@ -47,9 +47,9 @@ class bucky::params {
 
   # metricsd
   $metricsd_enabled   = false
-  $metricsd_ip        = '127.0.0.1'
-  $metricsd_port      = '23632'
-  $metricsd_flushtime = '10.0'
+  $metricsd_ip         = '127.0.0.1'
+  $metricsd_port       = '23632'
+  $metricsd_flush_time = '10.0'
 
   # collectd
   $collectd_enabled          = false
@@ -60,10 +60,10 @@ class bucky::params {
   $collectd_use_entry_points = 'True'
 
   # statsd
-  $statsd_enabled   = false
-  $statsd_ip        = '127.0.0.1'
-  $statsd_port      = '8125'
-  $statsd_flushtime = '10.0'
+  $statsd_enabled    = false
+  $statsd_ip         = '127.0.0.1'
+  $statsd_port       = '8125'
+  $statsd_flush_time = '10.0'
 
   # namespace settings
   $statsd_legacy_namespace = 'True'
