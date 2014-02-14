@@ -13,7 +13,7 @@ metricsd_port = <%= scope.lookupvar('bucky::metricsd_port') %>
 metricsd_enabled = True
 
 # The default interval between flushes of metric data to Graphite
-metricsd_default_interval = <%= scope.lookupvar('bucky::metricsd_flushtime') %>
+metricsd_default_interval = <%= scope.lookupvar('bucky::metricsd_flush_time') %>
 
 # You can specify the frequency of flushes to Graphite based on
 # the metric name used for each metric. These are specified as
@@ -57,7 +57,7 @@ statsd_port = <%= scope.lookupvar('bucky::statsd_port') %>
 statsd_enabled = True
 
 # How often stats should be flushed to Graphite.
-statsd_flush_time = <%= scope.lookupvar('bucky::statsd_flushtime') %>
+statsd_flush_time = <%= scope.lookupvar('bucky::statsd_flush_time') %>
 <%- else -%>
 statsd_enabled = False
 <%- end -%>
