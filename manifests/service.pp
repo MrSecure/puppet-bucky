@@ -77,10 +77,10 @@ class bucky::service {
   service { 'bucky':
     ensure     => $service_ensure,
     enable     => $service_enable,
-    name       => $bucky::params::service_name,
-    hasstatus  => $bucky::params::service_hasstatus,
-    hasrestart => $bucky::params::service_hasrestart,
-    pattern    => $bucky::params::service_pattern,
+    name       => $::bucky::params::service_name,
+    hasstatus  => $::bucky::params::service_hasstatus,
+    hasrestart => $::bucky::params::service_hasrestart,
+    pattern    => $::bucky::params::service_pattern,
   }
 
 }

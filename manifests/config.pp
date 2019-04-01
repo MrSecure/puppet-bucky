@@ -29,7 +29,7 @@ class bucky::config {
     mode    => '0644',
     owner   => 'root',
     group   => 'root',
-    require => Package["${bucky::params::package}"],
+    require => Package[$::bucky::params::package],
   }
 
   file { 'bucky_config':
